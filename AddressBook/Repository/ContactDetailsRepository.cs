@@ -65,6 +65,10 @@ namespace AddressBook.Repository
             }
 
         }
+        public void DeleteContact(long mobNumber)
+        {
+            contactDetailDictionary.Remove(mobNumber);
+        }
         public void DisplayContact()
         {
             foreach (var item in contactDetailDictionary)
