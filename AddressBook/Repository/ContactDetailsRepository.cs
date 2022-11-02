@@ -26,7 +26,7 @@ namespace AddressBook.Repository
                 Console.WriteLine("Address is : " + item.Value.Address);
                 Console.WriteLine("City is : " + item.Value.City);
                 Console.WriteLine("State is : " + item.Value.State);
-                Console.WriteLine("Zip Code is : " + item.Value.zip);
+                Console.WriteLine("Zip Code is : " + item.Value.Zip);
                 Console.WriteLine();
             }
         }
