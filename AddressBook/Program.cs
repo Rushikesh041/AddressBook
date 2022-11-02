@@ -59,7 +59,16 @@ namespace AddressBook
                 };
                 contactDetailsRepository.AddContactDetails(contact);
             }
+            Console.Write("Enter 'm' to edit contact using mobile number : ");
+            var edit = Console.ReadLine();
+            while (edit == "m")
+            {
+                Console.Write("Enter Mobile Number : ");
+                contactDetailsRepository.EditContactDetails(Convert.ToInt64(Console.ReadLine()));
 
+                Console.Write("Enter 'm' to edit contact using mobile number otherwise Enter any key : ");
+                edit = Console.ReadLine();
+            }
             contactDetailsRepository.DisplayContact();
 
         }
