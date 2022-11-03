@@ -58,7 +58,7 @@ namespace AddressBook.Repository
                     obj.State = state;
                     break;
                 case 8:
-                    Console.Write("Enter Zip to Update : ");
+                    Console.Write("Enter zip to Update : ");
                     int zipcode = Convert.ToInt32(Console.ReadLine());
                     obj.Zip = zipcode;
                     break;
