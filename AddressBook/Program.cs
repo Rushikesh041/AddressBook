@@ -82,7 +82,7 @@ namespace AddressBook
                 delete = Console.ReadLine();
             }
             {
-                Console.Write("Enter Unique Name Which you want to Delete Contact : ");
+                Console.Write("Enter Unique Name Which You want to Delete Contact : ");
                 contactDetailsRepository.DeleteContact(Console.Read());
                 Console.Write("Enter 'd' to Delete contact using Unique Name otherwise Enter any key : ");
                 delete = Console.ReadLine();
