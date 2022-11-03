@@ -18,6 +18,9 @@ namespace AddressBook
 
             while (input == "y")
             {
+                Console.Write("Enter Unique Name to Address Book : ");
+                string uniqueName = Console.ReadLine();
+
                 Console.WriteLine("Enter First Name : ");
                 string firstName = Console.ReadLine();
 
@@ -78,6 +81,13 @@ namespace AddressBook
                 Console.Write("Enter 'd' to Delete contact using mobile number otherwise Enter any key : ");
                 delete = Console.ReadLine();
             }
+            {
+                Console.Write("Enter Unique Name Which you want to Delete Contact : ");
+                contactDetailsRepository.DeleteContact(Console.Read());
+                Console.Write("Enter 'd' to Delete contact using Unique Name otherwise Enter any key : ");
+                delete = Console.ReadLine();
+            }
+
             contactDetailsRepository.DisplayContact();
 
         }
